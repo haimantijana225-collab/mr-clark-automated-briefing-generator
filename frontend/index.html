@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>MR. CLARK'S AUTOMATED BRIEFING GENERATOR</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background: radial-gradient(circle at top, #1a0028, #000000);
+    font-family: "Courier New", monospace;
+    color:white;
+    text-align:center;
+}
+
+/* MAIN TITLE */
+
+.title{
+    margin-top:120px;
+    font-size:52px;
+    color:#ff003c;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 10px #ff003c,
+        0 0 20px #ff003c,
+        0 0 40px #ff003c;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+    margin-top:15px;
+    font-size:20px;
+    color:#00eaff;
+}
+
+/* UPLOAD BOX */
+
+.upload-container{
+
+    margin:70px auto;
+    width:420px;
+    padding:40px;
+
+    border:2px solid #ff003c;
+    border-radius:12px;
+
+    background: rgba(0,0,0,0.7);
+
+    box-shadow:
+        0 0 15px #ff003c,
+        0 0 30px #ff003c;
+
+}
+
+/* FILE INPUT */
+
+input[type=file]{
+
+    margin-top:20px;
+    color:white;
+
+}
+
+/* BUTTON */
+
+button{
+
+    margin-top:25px;
+
+    padding:12px 28px;
+
+    font-size:16px;
+
+    border:none;
+    border-radius:6px;
+
+    background:#ff003c;
+    color:white;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#ff3366;
+    box-shadow:0 0 10px #ff3366;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    margin-top:80px;
+    font-size:14px;
+    color:#999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+MR. CLARK'S AUTOMATED BRIEFING GENERATOR
+</div>
+
+<div class="subtitle">
+AI Engine for Converting Documents into Presentations
+</div>
+
+<div class="upload-container">
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+
+<p>Select a PDF document</p>
+
+<input type="file" name="file" required>
+
+<br>
+
+<button type="submit">Generate Presentation</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+Hawkins Science Department | Automated Briefing System
+</div>
+
+</body>
+
+</html>
