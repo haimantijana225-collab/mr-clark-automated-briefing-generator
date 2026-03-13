@@ -3,3 +3,4 @@ python-pptx
 PyPDF2
 transformers
 torch
+matplotlib
